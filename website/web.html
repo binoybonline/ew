@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>microsite</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://www.iurbo.com/">URBO</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">All Products<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3-3</a></li>
+        </ul>
+      
+
+      <li style="float: right"><a href="#">Support</a></li>
+      <li style="float: right"><a href="#">About</a></li>
+  <form class="navbar-form navbar-left" action="/action_page.php">
+      <div style="margin-left: 740px;"  class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+      
+    </ul>
+  </div>
+</nav>
+  
+<div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-6" ;">
+<div style="display: flex; justify-content: center;">
+
+
+
+
+
+
+  <img src="Urbo-Standing-Work-Desk-WILG-1.jpg" style="width:100%">
+
+
+
+
+</div>
+</div>
+ <div class="col-sm-6" ;">
+
+<h1 style="font-size:300% ;">WILG</h1>
+<p>
+Standing Work Desk</p>
+
+<p>5 out of 5 based on customer rating 
+<p style="font-size:200%;color:Tomato;" >$239.99</p>
+<p>Standing desk with an easy-rotating crank (no electricity needed) to seamlessly<br>adjust the height according to your posture, in turn, helping you burn more calories.<br><br>
+<p style="font-size:170%;" >Item Dimensions & Weight<br></p>
+Length:  55.1 inches (140 cm)<br>
+Width:  23.6 inches (60 cm)<br>
+Height: Minimum 29.1 inches (74 cm) to Maximum 47.6 inches (121 cm)<br>
+Supports Weight:  Up to 88 pounds (40 kg)<br><br>
+<p style="font-size:170%;" >Materials: </p> Steel, Particle Board, Melamine, Aluminium, Plastic<br><br>
+<p style="font-size:170%;" >Model Number / UPC</p>
+UR-ST4X1 / 641361330292</p>
+
+<p><br><a href="https://www.iurbo.com/support/warranty/">Activate warranty</a> |
+<a href="https://www.iurbo.com/wp-content/uploads/2019/01/Urbo-Wilg-Standing-Desk-UR-ST4X1-Manual.pdf">Download manual</a> |
+<a href="https://www.iurbo.com/urbo-standing-work-desk//">Technical Specifications</a>
+
+</div>
+  </div>
+</div>
+
+
+
+<div class="w3-container">
+  </div>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Untitled1.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Untitled2.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="Untitled3.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+  </div>
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="Untitled1.png" style="width:100%;display:none">
+  <img class="mySlides" src="Untitled2.png" style="width:100%">
+  <img class="mySlides" src="Untitled3.png" style="width:100%;display:none">
+
+
+</div>
+
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>
